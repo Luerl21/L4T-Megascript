@@ -79,7 +79,7 @@ esac
 # virgl
 cd /tmp
 rm -rf virglrenderer
-git clone https://gitlab.freedesktop.org/virgl/virglrenderer.git || "Could not clone virglrenderer"
+git clone https://github.com/PojavLauncherTeam/virglrenderer.git || "Could not clone virglrenderer"
 cd virglrenderer
 meson -Dprefix=/usr build || error "Could not configure virglrenderer"
 ninja -j$(nproc) -C build || error "Could not build virglrenderer"
